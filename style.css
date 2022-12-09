@@ -19,6 +19,7 @@ body{
     height: 600px;
     background: #fff;
     box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    overflow: hidden;
 }
 header{
     position: relative;
@@ -89,4 +90,25 @@ header .action a{
 }
 .tabs input:nth-child(3):checked ~ .buttons .underline{
     left: 66.66%;
+}
+.content{
+    position: relative;
+    width: calc(340px * 3);
+    display: flex;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+.content .box {
+    position: relative;
+    width: 340px;
+}
+.tabs input:nth-child(1):checked ~ .content{
+    left: calc(340px * 0);
+}
+.tabs input:nth-child(2):checked ~ .content{
+    left:calc(340px * -1);
+}
+.tabs input:nth-child(3):checked ~ .content{
+    left: calc(340px * -2);
 }
