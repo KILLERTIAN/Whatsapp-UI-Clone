@@ -139,6 +139,7 @@ header .action a{
 .chatlist .block .imgbx{
     position: relative;
     min-width: 45px;
+    max-width: 45px;
     height: 45px;
     overflow: hidden;
     border-radius: 50%;
@@ -212,4 +213,20 @@ header .action a{
 ::-webkit-scrollbar-thumb{
     background: #bbb;
     border-radius: 10px;
+}
+.status .plus{
+    position: absolute;
+    top: 38px;
+    left: 40px;
+    width: 25px;
+    height: 25px;
+    background: #008069;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
 }
